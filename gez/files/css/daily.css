@@ -1,0 +1,68 @@
+.daily-form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 6px 6px 6px 46px;
+    background: rgb(173, 165, 199);
+}
+
+.daily-form .input-container {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.daily-form input[type='radio'] {
+    height: 23px;
+    width: 23px;
+    vertical-align: middle;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.daily-form label {
+    display: inline-block;
+    padding-left: 5px;
+    height: 23px;
+}
+
+.daily-form .question {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.daily-form .lbls{
+    font-size: 15px;
+    position: relative;
+    font-weight: bold;
+}
+
+.daily-form .daily-form-submit {
+    margin: 25px 0 10px 0;
+    padding: 8px 18px;
+    background: rgb(66,20,95);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.15s ease-in-out;
+}
+
+.daily-form .daily-form-submit:hover {
+    background-color: rgb(101, 37, 140);
+}
+
+@media screen and (max-width: 700px) {
+    .daily-form {
+        max-width: 750px;
+        padding: 6px;
+    }
+
+    .daily-form .question {
+        padding-left: 5px;
+    }
+
+    .daily-form .daily-form-submit {
+        margin: 25px 0 10px 10px;
+    }
+}
