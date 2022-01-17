@@ -1,0 +1,140 @@
+.meter {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.meter_container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    min-width: 500px;
+    min-height: 250px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    overflow: hidden;
+    transform: scale(1);
+}
+
+.meter_background {
+    position: absolute;
+    background-color: #b4b4b4;
+    width: 100%;
+    height: 100%;
+    border-radius: 250px 250px 0 0;
+}
+
+.meter_background_circle {
+    position: absolute;
+    background-color: rgb(200, 191, 231);
+    width: 30%;
+    height: 30%;
+    border-radius: 100px 100px 0 0;
+}
+
+.meter_background_green {
+    position: absolute;
+    background-color: #58c219;
+    width: 85%;
+    height: 85%;
+    border-radius: 250px 250px 0 0;
+}
+
+.meter_background_yellow {
+    position: absolute;
+    background-color: #84dc31;
+    width: 85%;
+    height: 85%;
+    border-radius: 250px 250px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transform-origin: 50% 100%;
+}
+
+.meter_background_orange {
+    position: absolute;
+    background-color: #dcce31;
+    width: 85%;
+    height: 85%;
+    border-radius: 250px 250px 0 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform-origin: 50% 100%;
+}
+
+.meter_background_red {
+    position: absolute;
+    background-color: #dc4b31;
+    width: 85%;
+    height: 85%;
+    border-radius: 250px 250px 0 0;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    transform-origin: 50% 100%;
+}
+
+.meter_arrow {
+    position: absolute;
+    width: 70%;
+    height: 3%;
+    transform-origin: 49% 100%;
+    border-radius: 50%;
+    background: linear-gradient(to right, black 0%, black 50%, rgb(200, 191, 231) 51%, rgb(200, 191, 231) 100%);
+
+    /*Arrow rotation*/
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+
+    transition: 1s ease-in-out;
+}
+
+.meter_origin {
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: -15px;
+}
+
+.meter_canvas {
+    z-index: 9999;
+
+}
+.chart-container2{
+    position: relative;
+    width:850px
+}
+
+
+@media screen and (max-width: 700px) {
+    /*.meter {*/
+    /*    margin-top: 0;*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
+
+    .meter_container {
+        transform: scale(0.65);
+    }
+
+    .chart-container2{
+        width: 95%;
+    }
+}
