@@ -1,0 +1,230 @@
+html, body {
+    margin: 0;
+    background: rgb(200, 191, 231);
+}
+
+@font-face {
+    font-family: RijksoverheidSansHeading;
+    src: url("../fonts/rijksoverheidsansheading-bold.ttf");
+}
+@font-face {
+    font-family: RijksoverheidSerif;
+    src: url("../fonts/rijksoverheidserif-regular.ttf");
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: RijksoverheidSansHeading, sans-serif;
+}
+
+p {
+    font-family: RijksoverheidSerif, serif;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Navbar */
+
+.title {
+    align-self: center;
+    line-height: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(66,20,95);
+}
+
+.header-item {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header-item h3 {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.header-home:hover {
+    transition: opacity ease-in-out 0.15s;
+    opacity: 70%;
+}
+
+.btnHome{
+    cursor: pointer;
+    width: 60px;
+}
+
+.header-link {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    background-color:  #c6b8cf;
+}
+
+.header-link.rounded {
+    border: 2px solid #c6b8cf;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.header-link.rounded:hover{
+    background-color: white;
+    color: purple;
+    transition: 0.15s ease-in-out;
+}
+
+
+/* General styling */
+
+.h1, .h2, .h3, .h4, .h5 {
+    justify-content: center;
+}
+
+.button {
+    cursor: pointer;
+    background-color: rgb(200, 191, 231);
+    text-decoration-color: rgb(66, 20, 95);
+}
+
+.button.rounded {
+    border: 2px solid rgb(66, 20, 95);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.rounded:hover {
+    background-color: rgb(66, 20, 95);
+    color: #fff;
+}
+
+/* hamburger menu */
+
+.header-buttons-pc {
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons-phone {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 40% 0 0 0;
+    background: rgb(66, 20, 95);
+    color: #fff;
+}
+
+.header-buttons-phone .header-burger-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header-buttons-phone .header-burger-container i {
+    font-size: 2rem;
+}
+
+.header-buttons-screen {
+    z-index: 10;
+
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    width: 70%;
+    height: 70%;
+
+    border-radius: 50px 0 0 0;
+    background: rgb(66, 20, 95);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.header-buttons-screen .header-link-phone{
+    margin: 12px;
+    padding: 4px;
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid rgb(200, 191, 231);
+}
+
+/* flex */
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 700px){
+    .header-item h3 {
+        display: none;
+    }
+
+    .header-buttons-pc {
+        display: none;
+    }
+
+    .header-buttons-phone {
+        display: flex;
+    }
+
+    .link {
+        margin-left: 2%;
+    }
+
+    .button.rounded{
+        border: 2px solid rgb(66, 20, 95);
+        border-radius: 5px;
+        padding: 5px;
+        background-color: rgb(66, 20, 95);;
+        color: #fff;
+    }
+}
+
+.test-made {
+    height: 36px;
+    background: lightgray;
+    color: #8c8c8c;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #c6b8cf;
+    cursor: default;
+}
+
+.test-made:hover {
+    background: lightgray;
+    color: #8c8c8c;
+}
